@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+<!-- Change to force push -->
 
 <head>
     <!-- Required meta tags -->
@@ -33,17 +34,7 @@
     <script src="script.js"></script>
 
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FVN5WTXTKP"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-FVN5WTXTKP');
-    </script>
-
-    <title>ITSC 121X Self-Placement</title>
+    <title>CSE 121X Self-Placement</title>
 </head>
 
 <body>
@@ -358,14 +349,14 @@
                 <!-- Nav tabs -->
                 <ul class="nav nav-pills mb-2" id="p_1212p1-lang" role="tablist" style="display: none;">
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="p_1212p1-java-tab" data-bs-toggle="tab"
+                        <button class="nav-link d-none" id="p_1212p1-java-tab" data-bs-toggle="tab"
                             data-bs-target="#p_1212p1-java" type="button" role="tab" aria-controls="p_1212p1-java"
                             aria-selected="false">Java: Problem Solving & Algorithms</button>
                     </li>
                     <li class="nav-item" role="presentation">
                         <button class="nav-link active" id="p_1212p1-python-tab" data-bs-toggle="tab"
                             data-bs-target="#p_1212p1-python" type="button" role="tab" aria-controls="p_1212p1-python"
-                            aria-selected="true">Python: Problem-Solving & Algorithms</button>
+                            aria-selected="true">Problem-Solving & Algorithms</button>
                     </li>
                 </ul>
 
@@ -892,11 +883,12 @@ public static String checkSteak(int temp) {
     } else {
         return "Keep cooking";
     }
+}
 
-A: checkSteak(150)
-B: checkSteak(140)
-C: checkSteak(145)
-}</code></pre>
+A: "checkSteak(150)",
+B: "checkSteak(140)",
+C: "checkSteak(145)"
+}</code></code></pre>
                             </div>
 
                             <div class="col-12 toggle-solutions" id="p_1212p5-java-solution-col">
@@ -911,13 +903,13 @@ C: checkSteak(145)
                                             <pre><code class="language-java">
 def check_steak(temp):
     if temp >= 145:
-        return "Ready to eat"
+        return \"Ready to eat\"
     else:
-        return "Keep cooking"
+        return \"Keep cooking\"
         
-A: "Ready to eat"
-B: "Keep cooking"
-C: "Ready to eat"</code></pre>
+A: "\"Ready to eat\"",
+B: "\"Keep cooking\"",
+C: "\"Ready to eat\""</code></pre>
                                         </samp>
                                     </div>
                                 </div>
@@ -930,9 +922,9 @@ C: "Ready to eat"</code></pre>
                         aria-labelledby="p_1212p5-python-tab">
                         <div class="row">
                             <div class="col-12" id="p_1212p5-python-problem-col">
-                                <pre><code class="language-python">A: "Ready to eat"
-B: "Keep cooking"
-C: "Ready to eat"</code></pre>
+                                <pre><code class="language-python">A: "check_steak(150)",
+B: "check_steak(140)",
+C: "check_steak(145)"</code></pre>
                             </div>
 
                             <div class="col-12 toggle-solutions" id="p_1212p5-python-solution-col">
@@ -1297,8 +1289,8 @@ D: "4"</code></pre>
                 <label class="form-label" for="topics-1213">How familiar and comfortable are you with each of
                     the following programming topics/constructs?</label>
                 <div class="mb-3">
-                    <label for="1213io" id="ioLabel">Console and/or file input and output</label>
-                    <select class="form-select" name="1213io">
+                    <label for="1213encapsulation" id="ioLabel">Encapsulation</label>
+                    <select class="form-select" name="1213encapsulation">
                         <option value="" selected disabled>Select an option</option>
                         <option value="0">I have never heard of this.</option>
                         <option value="1">I have heard of this but don't know what it is or don't understand it.
@@ -1309,8 +1301,8 @@ D: "4"</code></pre>
                     </select>
                 </div>
                 <div class="mb-3">
-                    <label for="1213maps" id="mapLabel">Maps and/or dictionaries</label>
-                    <select class="form-select" name="1213maps">
+                    <label for="1213inheritance" id="mapLabel">Inheritance</label>
+                    <select class="form-select" name="1213inheritance">
                         <option value="" selected disabled>Select an option</option>
                         <option value="0">I have never heard of this.</option>
                         <option value="1">I have heard of this but don't know what it is or don't understand it.
@@ -1321,8 +1313,8 @@ D: "4"</code></pre>
                     </select>
                 </div>
                 <div class="mb-3">
-                    <label for="1213classes" id="classLabel">Defining classes</label>
-                    <select class="form-select" name="1213classes">
+                    <label for="1213polymorphism" id="classLabel">Polymorphism</label>
+                    <select class="form-select" name="1213polymorphism">
                         <option value="" selected disabled>Select an option</option>
                         <option value="0">I have never heard of this.</option>
                         <option value="1">I have heard of this but don't know what it is or don't understand it.
@@ -1333,8 +1325,8 @@ D: "4"</code></pre>
                     </select>
                 </div>
                 <div class="mb-3">
-                    <label for="1213construct" id="constructLabel">Defining constructors</label>
-                    <select class="form-select" name="1213construct">
+                    <label for="1213interfaces" id="constructLabel">Interfaces</label>
+                    <select class="form-select" name="1213interfaces">
                         <option value="" selected disabled>Select an option</option>
                         <option value="0">I have never heard of this.</option>
                         <option value="1">I have heard of this but don't know what it is or don't understand it.
@@ -1345,8 +1337,56 @@ D: "4"</code></pre>
                     </select>
                 </div>
                 <div class="mb-3">
-                    <label for="1213inter" id="interLabel">Interfaces</label>
-                    <select class="form-select" name="1213inter">
+                    <label for="1213abstract" id="interLabel">Abstract Classes</label>
+                    <select class="form-select" name="1213abstract">
+                        <option value="" selected disabled>Select an option</option>
+                        <option value="0">I have never heard of this.</option>
+                        <option value="1">I have heard of this but don't know what it is or don't understand it.
+                        </option>
+                        <option value="2">I know what this is but I am not comfortable using it in programming.</option>
+                        <option value="3">I am somewhat comfortable using this in programming.</option>
+                        <option value="4">I am entirely comfortable using this in programming.</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="1213aggregation" id="interLabel">Aggregation</label>
+                    <select class="form-select" name="1213aggregation">
+                        <option value="" selected disabled>Select an option</option>
+                        <option value="0">I have never heard of this.</option>
+                        <option value="1">I have heard of this but don't know what it is or don't understand it.
+                        </option>
+                        <option value="2">I know what this is but I am not comfortable using it in programming.</option>
+                        <option value="3">I am somewhat comfortable using this in programming.</option>
+                        <option value="4">I am entirely comfortable using this in programming.</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="1213association" id="interLabel">Association</label>
+                    <select class="form-select" name="1213association">
+                        <option value="" selected disabled>Select an option</option>
+                        <option value="0">I have never heard of this.</option>
+                        <option value="1">I have heard of this but don't know what it is or don't understand it.
+                        </option>
+                        <option value="2">I know what this is but I am not comfortable using it in programming.</option>
+                        <option value="3">I am somewhat comfortable using this in programming.</option>
+                        <option value="4">I am entirely comfortable using this in programming.</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="1213ehandling" id="interLabel">Exception Handling</label>
+                    <select class="form-select" name="1213ehandling">
+                        <option value="" selected disabled>Select an option</option>
+                        <option value="0">I have never heard of this.</option>
+                        <option value="1">I have heard of this but don't know what it is or don't understand it.
+                        </option>
+                        <option value="2">I know what this is but I am not comfortable using it in programming.</option>
+                        <option value="3">I am somewhat comfortable using this in programming.</option>
+                        <option value="4">I am entirely comfortable using this in programming.</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="1213generics" id="interLabel">Generics</label>
+                    <select class="form-select" name="1213generics">
                         <option value="" selected disabled>Select an option</option>
                         <option value="0">I have never heard of this.</option>
                         <option value="1">I have heard of this but don't know what it is or don't understand it.
@@ -2545,6 +2585,7 @@ D: "Compilation error - 123 is an Integer, but stringContainer only accepts Stri
             <textarea id="result-hidden" name="result" style="display:none"></textarea>
         </form>
 
+        <!-- Conclusions section -->
         <div>
             <!-- Conclusion 1: No previous programming experience -->
             <div class="mb-3 alert alert-success result" role="alert" id="result-1212-noexp" style="display:none">

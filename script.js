@@ -13,6 +13,8 @@ $(document).ready(function () {
     $('input[name^="p_1213p"]').change(check1213Problem);
 });
 
+// change to force reupload
+
 function checkPrevCourse(event) {
     let resp = $('input[name="previousCourse"]:checked').val();
     console.log(resp);
