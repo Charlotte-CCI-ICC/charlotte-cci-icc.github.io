@@ -365,9 +365,9 @@
                     <div class="tab-pane" id="p_1212p1-java" role="tabpanel" aria-labelledby="p_1212p1-java-tab">
                         <div class="row">
                             <div class="col-12" id="p_1212p1-java-problem-col">
-                                <pre>A. Given a whole number (an integer), determine the previous and next whole numbers.
+                                <pre><code class="language-java">A. Given a whole number (an integer), determine the previous and next whole numbers.
 B. Given the width and height of a right triangle, determine the area of the shape. (Area of a right triangle = 0.5 * width * height)
-C. Given the cost of an order, the tip percentage, and the tax percentage, calculate the total amount to be paid.</pre>
+C. Given the cost of an order, the tip percentage, and the tax percentage, calculate the total amount to be paid.</code></pre>
                             </div>
 
                             <div class="col-12 toggle-solutions" id="p_1212p1-java-solution-col">
@@ -529,10 +529,10 @@ C. Given the cost of an order, the tip percentage, and the tax percentage, calcu
                                 <div class="collapse" id="p_1212p2-python-solution">
                                     <div class="card card-body">
                                         <samp>
-                                            <pre><code class="language-python">A: PREVIOUS = NUM - 1
+                                            <pre><code class="language-python">A. PREVIOUS = NUM - 1
    NEXT = NUM + 1
-B: AREA = 0.5 * WIDTH * HEIGHT
-C: TOTAL = COST + (COST * TIP_PERCENT) + (COST * TAX_PERCENT)</code></pre>
+B. AREA = 0.5 * WIDTH * HEIGHT
+C. TOTAL = COST + (COST * TIP_PERCENT) + (COST * TAX_PERCENT)</code></pre>
                                         </samp>
                                     </div>
                                 </div>
@@ -583,7 +583,7 @@ C: TOTAL = COST + (COST * TIP_PERCENT) + (COST * TAX_PERCENT)</code></pre>
                 <label for="p_1212p3">If you are familiar with data types in programming languages, the next thing to
                     cover is actually doing something with data after knowing how it is stored. Functions and methods
                     are the way we do this. For this exercise, assume you're given two variables: NAME and AGE. What
-                    will this function return?
+                    will this function return for each case, A and B?
 
                 </label><br />
 
@@ -607,13 +607,13 @@ C: TOTAL = COST + (COST * TIP_PERCENT) + (COST * TAX_PERCENT)</code></pre>
                     <div class="tab-pane" id="p_1212p3-java" role="tabpanel" aria-labelledby="p_1212p3-java-tab">
                         <div class="row">
                             <div class="col-12" id="p_1212p3-java-problem-col">
-                                <pre><code class="language-java">public static String greetPerson(String name, int age) {
+                                <pre><code class="language-java">public String greetPerson(String name, int age) {
     return name + " is " + age + " years old.";
 }
 
-A:  name = "John Doe"
+A.  name = "John Doe"
     age = 37
-B:  name = "Jane Doe"
+B.  name = "Jane Doe"
     age = 35</code></pre>
                             </div>
 
@@ -626,8 +626,8 @@ B:  name = "Jane Doe"
                                 <div class="collapse" id="p_1212p3-java-solution">
                                     <div class="card card-body">
                                         <samp>
-                                            <pre><code class="language-java">A: "John Doe is 37 years old.",
-B: "Jane Doe is 35 years old."</code></pre>
+                                            <pre>A. <code class="language-java">"John Doe is 37 years old.".</code>
+B. <code class="language-java">"Jane Doe is 35 years old."</code></pre>
                                         </samp>
                                     </div>
                                 </div>
@@ -643,9 +643,9 @@ B: "Jane Doe is 35 years old."</code></pre>
                                 <pre><code class="language-python">def greetPerson(name, age):
     return f"{name} is {age} years old."
 
-A: name = 'John Doe'
+A. name = 'John Doe'
    age = 37
-B: name = 'Jane Doe'
+B. name = 'Jane Doe'
    age = 35"</code></pre>
                             </div>
 
@@ -659,8 +659,8 @@ B: name = 'Jane Doe'
                                 <div class="collapse" id="p_1212p3-python-solution">
                                     <div class="card card-body">
                                         <samp>
-                                            <pre><code class="language-python">A: "John Doe is 37 years old."
-b: "Jane Doe is 35 years old."</code></pre>
+                                            <pre>A. <code class="language-python">"John Doe is 37 years old."</code>
+B. <code class="language-python">"Jane Doe is 35 years old."</code></pre>
                                         </samp>
                                     </div>
                                 </div>
@@ -733,7 +733,7 @@ b: "Jane Doe is 35 years old."</code></pre>
                     <div class="tab-pane" id="p_1212p4-java" role="tabpanel" aria-labelledby="p_1212p4-java-tab">
                         <div class="row">
                             <div class="col-12" id="p_1212p4-java-problem-col">
-                                <pre><code class="language-java">public static int addByTwos() {
+                                <pre><code class="language-java">public int addByTwos() {
     int total = 0;
     for (int i = 0; i < 5; i++) {
         total = total + 2;
@@ -774,11 +774,11 @@ C: 15</code></pre>
     total = 0
     for i in range(5):
         total = total + 2
-    return total
+    return total</code>
 
-A: "What does" add_by_twos() "return?"
-B: "If we changed" range(5) "to" range(3)", what would the function return?"
-C: "If we changed" total + 2 "to" total + 3", what would the original function return?"
+A. What does <code class="language-python">add_by_twos()</code> return?
+B. If we changed <code class="language-python">range(5)</code> to <code class="language-python">range(3)</code>, what would the function return?
+C. If we changed <code class="language-python">total + 2</code> to <code class="language-python">total + 3</code>, what would the original function return?
                                 </code></pre>
                             </div>
 
@@ -791,10 +791,9 @@ C: "If we changed" total + 2 "to" total + 3", what would the original function r
                                 <div class="collapse" id="p_1212p4-python-solution">
                                     <div class="card card-body">
                                         <samp>
-                                            <pre><code class="language-python">A: 10
-B: 6
-C: 15
-</code></pre>
+                                            <pre>A. <code class="language-python">10</code>
+B. <code class="language-python">6</code>
+C. <code class="language-python">15</code></pre>
                                         </samp>
                                     </div>
                                 </div>
