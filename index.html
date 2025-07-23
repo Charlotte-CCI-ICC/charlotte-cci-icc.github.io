@@ -529,10 +529,10 @@ C. Given the cost of an order, the tip percentage, and the tax percentage, calcu
                                 <div class="collapse" id="p_1212p2-python-solution">
                                     <div class="card card-body">
                                         <samp>
-                                            <pre><code class="language-python">A. PREVIOUS = NUM - 1
-   NEXT = NUM + 1
-B. AREA = 0.5 * WIDTH * HEIGHT
-C. TOTAL = COST + (COST * TIP_PERCENT) + (COST * TAX_PERCENT)</code></pre>
+                                            <pre>A. <code class="language-python">PREVIOUS = NUM - 1
+   NEXT = NUM + 1</code>
+B. <code class="language-python">AREA = 0.5 * WIDTH * HEIGHT</code>
+C. <code class="language-python">TOTAL = COST + (COST * TIP_PERCENT) + (COST * TAX_PERCENT)</code></pre>
                                         </samp>
                                     </div>
                                 </div>
@@ -583,7 +583,7 @@ C. TOTAL = COST + (COST * TIP_PERCENT) + (COST * TAX_PERCENT)</code></pre>
                 <label for="p_1212p3">If you are familiar with data types in programming languages, the next thing to
                     cover is actually doing something with data after knowing how it is stored. Functions and methods
                     are the way we do this. For this exercise, assume you're given two variables: NAME and AGE. What
-                    will this function return for each case, A and B?
+                    will caling this function return for each case, A and B?
 
                 </label><br />
 
@@ -609,11 +609,11 @@ C. TOTAL = COST + (COST * TIP_PERCENT) + (COST * TAX_PERCENT)</code></pre>
                             <div class="col-12" id="p_1212p3-java-problem-col">
                                 <pre><code class="language-java">public String greetPerson(String name, int age) {
     return name + " is " + age + " years old.";
-}
+}</code>
 
-A.  name = "John Doe"
-    age = 37
-B.  name = "Jane Doe"
+A.  <code class="language-java">name = "John Doe"
+    age = 37</code>
+B.  <code class="language-java">name = "Jane Doe"
     age = 35</code></pre>
                             </div>
 
@@ -742,8 +742,8 @@ B. <code class="language-python">"Jane Doe is 35 years old."</code></pre>
 }</code>
 
 A. What does <code class="language-java">addByTwos()</code> return?
-B. If we changed <code class="language-java">i < 5 </code>to <code class="language-java">i < 3</code>, what would the method return?
-C. If we changed <code class="language-java">total + 2</code> to <code class="language-java">total + 3</code>, what would the original method return?</pre>
+B. If we changed <code class="language-java">i < 5 </code>to <code class="language-java">i < 3</code>, what would the function return?
+C. If we changed <code class="language-java">total + 2</code> to <code class="language-java">total + 3</code>, what would the original function return?</pre>
                             </div>
 
                             <div class="col-12 toggle-solutions" id="p_1212p4-java-solution-col">
@@ -879,12 +879,11 @@ public static String checkSteak(int temp) {
     } else {
         return "Keep cooking";
     }
-}
+}</code>
 
-A: "checkSteak(150)",
-B: "checkSteak(140)",
-C: "checkSteak(145)"
-}</code></code></pre>
+A. <code class="language-java">checkSteak(150);</code>
+B. <code class="language-java">checkSteak(140);</code>
+C. <code class="language-java">checkSteak(145);</code></pre>
                             </div>
 
                             <div class="col-12 toggle-solutions" id="p_1212p5-java-solution-col">
@@ -896,12 +895,9 @@ C: "checkSteak(145)"
                                 <div class="collapse" id="p_1212p5-java-solution">
                                     <div class="card card-body">
                                         <samp>
-                                            <pre><code class="language-java">
-
-
-A. "Ready to eat"
-B. "Keep cooking"
-C. "Ready to eat"</code></pre>
+                                            <pre>A. <code class="language-java">"Ready to eat"</code>
+B. <code class="language-java">"Keep cooking"</code>
+C.<code class="language-java">"Ready to eat"</code></pre>
                                         </samp>
                                     </div>
                                 </div>
@@ -918,7 +914,11 @@ C. "Ready to eat"</code></pre>
     if temp >= 145:
         return "Ready to eat"
     else:
-        return "Keep cooking"</code></pre>
+        return "Keep cooking"
+    
+checkSteak(150)
+checkSteak(140)
+checkSteak(145)</code></pre>
                             </div>
 
                             <div class="col-12 toggle-solutions" id="p_1212p5-python-solution-col">
@@ -930,9 +930,9 @@ C. "Ready to eat"</code></pre>
                                 <div class="collapse" id="p_1212p5-python-solution">
                                     <div class="card card-body">
                                         <samp>
-                                            <pre><code class="language-python">A. "Ready to eat"
-B. "Keep cooking"
-C. "Ready to eat"</code></pre>
+                                            <pre>A. <code class="language-python">"Ready to eat"</code>
+B. <code class="language-java">"Keep cooking"</code>
+C. <code class="language-java">"Ready to eat"</code></pre>
                                         </samp>
                                     </div>
                                 </div>
@@ -980,9 +980,10 @@ C. "Ready to eat"</code></pre>
             <!-- Python/1212 Q6 Advanced Conditionals -->
             <div class="mb-3 question" id="p_1212p6" style="display:none">
                 <label for="p_1212p6">
-                    Loops allow us to repeat code multiple times, just as the name suggests. This is useful for many
-                    cases, such as going through a list of items or doing some mathematical operation each time the code
-                    block loops. Consider the following code:
+                    Sometimes a program needs to choose between more than two options. Multi-way conditionals allow you
+                    to handle multiple possible conditions using structures like if...elif...else in Python or if...else
+                    if...else in Java. They help your code respond differently depending on a range of values or
+                    scenarios. Review the code below and then answer questions A, B, and C.
                 </label><br />
 
                 <!-- Nav tabs -->
@@ -1017,12 +1018,12 @@ C. "Ready to eat"</code></pre>
     } else {
         return "F";
     }
-}
+}</code>
 
-A: gradeLetter(85)
-B: gradeLetter(92)
-C: gradeLetter(58)
-D: gradeLetter(70)</code></pre>
+A: <code class="language-java">gradeLetter(85)</code>
+B: <code class="language-java">gradeLetter(92)</code>
+C: <code class="language-java">gradeLetter(58)</code>
+D: <code class="language-java">gradeLetter(70)</code></pre>
                             </div>
 
                             <div class="col-12 toggle-solutions" id="p_1212p6-java-solution-col">
@@ -1034,10 +1035,10 @@ D: gradeLetter(70)</code></pre>
                                 <div class="collapse" id="p_1212p6-java-solution">
                                     <div class="card card-body">
                                         <samp>
-                                            <pre><code class="language-java">A: "B"
-B: "A"
-C: "F"
-D: "C"</code></pre>
+                                            <pre>A. <code class="language-java">"B"</code>
+B  <code class="language-java">"A"</code>
+C. <code class="language-java">"F"</code>
+D. <code class="language-java">"C"</code></pre>
                                         </samp>
                                     </div>
                                 </div>
@@ -1060,12 +1061,12 @@ D: "C"</code></pre>
     elif score >= 60:
         return "D"
     else:
-        return "F"
+        return "F"</code>
 
-A: grade_letter(85)
-B: grade_letter(92)
-C: grade_letter(58)
-D: grade_letter(70)</code></pre>
+A. <code class="language-java">grade_letter(85)</code>
+B. <code class="language-java">grade_letter(92)</code>
+C. <code class="language-java">grade_letter(58)</code>
+D. <code class="language-java">grade_letter(70)</code></pre>
                             </div>
 
                             <div class="col-12 toggle-solutions" id="p_1212p6-python-solution-col">
@@ -1078,10 +1079,10 @@ D: grade_letter(70)</code></pre>
                                 <div class="collapse" id="p_1212p6-python-solution">
                                     <div class="card card-body">
                                         <samp>
-                                            <pre><code class="language-python">A: "B"
-B: "A"
-C: "F"
-D: "C"</code></pre>
+                                            <pre>A. <code class="language-python">"B"</code>
+B. <code class="language-python">"A"</code>
+C. <code class="language-python">"F"</code>
+D. <code class="language-python">"C"</code></pre>
                                         </samp>
                                     </div>
                                 </div>
@@ -1160,12 +1161,12 @@ D: "C"</code></pre>
     int lastGrade = grades[2];
     int totalStudents = students.length;
     return firstStudent + " and there are " + totalStudents + " students";
-}
+}</code>
 
-A: getStudentInfo(["Alice", "Bob", "Charlie"], [85, 90, 78])
-B: getStudentInfo(["Emma", "David"], [92, 88, 95])"
-C: "What would" grades[1] "return from the first example?"
-D: "What would" new String[]{"x", "y", "z", "w"}.length "return?"</code></pre>
+A. What would <code class="language-java">getStudentInfo(["Alice", "Bob", "Charlie"], [85, 90, 78])</code> return?
+B. What would <code class="language-java">getStudentInfo(["Emma", "David"], [92, 88, 95])</code> return?
+C. What would <code class="language-java">grades[1]</code> return from the first example?
+D. What would <code class="language-java">new String[]{"x", "y", "z", "w"}.length</code> return?</pre>
                             </div>
 
                             <div class="col-12 toggle-solutions" id="p_1212p7-java-solution-col">
@@ -1177,10 +1178,10 @@ D: "What would" new String[]{"x", "y", "z", "w"}.length "return?"</code></pre>
                                 <div class="collapse" id="p_1212p7-java-solution">
                                     <div class="card card-body">
                                         <samp>
-                                            <pre><code class="language-java">A: "Alice and there are 3 students",
-B: "Emma and there are 2 students"
-C: "90"
-D: "4"</code></pre>
+                                            <pre>A. <code class="language-java">"Alice and there are 3 students"</code>
+B. <code class="language-java">"Emma and there are 2 students"</code>
+C. <code class="language-java">90</code>
+D. <code class="language-java">4</code></pre>
                                         </samp>
                                     </div>
                                 </div>
@@ -1197,12 +1198,12 @@ D: "4"</code></pre>
     first_student = students[0]
     last_grade = grades[2]
     total_students = len(students)
-    return f"{first_student} and there are {total_students} students"
+    return f"{first_student} and there are {total_students} students"</code>
 
-A: get_student_info(['Alice', 'Bob', 'Charlie'], [85, 90, 78])
-B: get_student_info(['Emma', 'David'], [92, 88, 95])
-C: "What would" grades[1] "return from the first example?"
-D: "What would" len(['x', 'y', 'z', 'w']) "return?"</code></pre>
+A. What would <code class="language-python">get_student_info(['Alice', 'Bob', 'Charlie'], [85, 90, 78])</code> return?
+B. What would <code class="language-python">get_student_info(['Emma', 'David'], [92, 88, 95])</code> return?
+C. What would <code class="language-python">grades[1]</code> return from the first example?
+D. What would <code class="language-python">len(['x', 'y', 'z', 'w']) return?</code></pre>
                             </div>
 
                             <div class="col-12 toggle-solutions" id="p_1212p7-python-solution-col">
@@ -1215,10 +1216,10 @@ D: "What would" len(['x', 'y', 'z', 'w']) "return?"</code></pre>
                                 <div class="collapse" id="p_1212p7-python-solution">
                                     <div class="card card-body">
                                         <samp>
-                                            <pre><code class="language-python">A: "Alice and there are 3 students",
-B: "Emma and there are 2 students"
-C: "90"
-D: "4"</code></pre>
+                                            <pre><code class="language-python">A: "Alice and there are 3 students"</code>
+B. <code class="language-python">"Emma and there are 2 students"</code>
+C. <code class="language-python">90</code>
+D. <code class="language-python">4</code></pre>
                                         </samp>
                                     </div>
                                 </div>
