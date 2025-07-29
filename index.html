@@ -1454,11 +1454,11 @@ D. <code class="language-python">4</code></pre>
         return balance;
     }
 }
-
-A: "Why doesn't this class have a" setBalance() "method?"
-B: "What happens if you try to deposit a negative amount?"
-C: "What does the withdraw method return if you try to withdraw more money than the balance?"
-D: "How does this class demonstrate the principle of encapsulation?"</code></pre>
+</code>
+A. Why doesn't this class have a <code class="language-java">setBalance()</code> method?
+B. What happens if you try to deposit a negative amount?
+C. What does the withdraw method return if you try to withdraw more money than the balance?
+D. How does this class demonstrate the principle of encapsulation?</pre>
                             </div>
 
                             <div class="col-12 toggle-solutions" id="p_1213p1-java-solution-col">
@@ -1470,11 +1470,10 @@ D: "How does this class demonstrate the principle of encapsulation?"</code></pre
                                 <div class="collapse" id="p_1213p1-java-solution">
                                     <div class="card card-body">
                                         <samp>
-                                            <pre><code class="language-java">A: "To prevent unauthorized direct modification of the balance - balance should only change through controlled deposit/withdraw operations",
-B: "Nothing happens - the deposit method checks if" amount > 0 "before adding to balance",
-C: "false (the withdrawal is rejected)",
-D: "It hides the internal balance field and controls access through specific methods that enforce business rules"
-                                            </code></pre>
+                                            <pre>A. To prevent unauthorized direct modification of the balance - balance should only change through controlled deposit/withdraw operations
+B. Nothing happens - the deposit method checks if <code class="language-java">amount > 0</code> before adding to balance
+C. False (the withdrawal is rejected)
+D. It hides the internal balance field and controls access through specific methods that enforce business rules</pre>
                                         </samp>
                                     </div>
                                 </div>
@@ -1613,12 +1612,12 @@ D: "It hides the internal balance field and controls access through specific met
     public void honk() {
         System.out.println("Beep beep!");
     }
-}
+}</code>
 
-A: "What does" super(brand, year) "do in the Car constructor?"
-B: "If you create:"" Car myCar = new Car("Toyota", 2020, 4); "and call" myCar.start()", what will be printed?"
-C: "Can a Car object access the 'brand' field directly? Why or why not?"
-D: "What's the difference between the" start() "method in" Vehicle "and" Car?"</code></pre>
+A. What does <code class="language-java">super(brand, year)</code> do in the Car constructor?
+B. If you create: <code class="language-java">Car myCar = new Car("Toyota", 2020, 4);</code> and call <code class="Language-java">myCar.start();</code>, what will be printed?
+C. Can a Car object access the 'brand' field directly? Why or why not?
+D. What's the difference between the <code class="language-java">start()</code> method in <code class="language=java">Vehicle</code> and <code class="language=java">Car</code>?</pre>
                             </div>
 
                             <div class="col-12 toggle-solutions" id="p_1213p2-java-solution-col">
@@ -1630,10 +1629,10 @@ D: "What's the difference between the" start() "method in" Vehicle "and" Car?"</
                                 <div class="collapse" id="p_1213p2-java-solution">
                                     <div class="card card-body">
                                         <samp>
-                                            <pre><code class="language-java">A: "It calls the parent class (Vehicle) constructor to initialize the brand and year fields",
-B: "Car engine starting...",
-C: "Yes, because 'brand' is declared as protected in the" Vehicle "class, making it accessible to subclasses",
-D: "Car overrides the" start() "method to provide its own implementation instead of using the parent's version"</code></pre>
+                                            <pre>A. It calls the parent class (<code class="language-java">Vehicle</code>) constructor to initialize the brand and year fields
+B. <code class="language-java">"Car engine starting..."</code>
+C. Yes, because 'brand' is declared as protected in the <code class="language-java">Vehicle</code> class, making it accessible to subclasses
+D. Car overrides the <code class="language-java">start()</code> method to provide its own implementation instead of using the parent's version</pre>
                                         </samp>
                                     </div>
                                 </div>
@@ -1732,12 +1731,12 @@ Animal[] animals = {new Dog(), new Cat(), new Animal()};
 
 for (Animal animal : animals) {
     animal.makeSound();
-}
+}</code>
 
-A: "What will be printed when the loop executes?"
-B: "How does Java determine which" makeSound() "method to call for each animal?"
-C: "What is this type of polymorphism called?"
-D: "Could you assign:" Animal myPet = new Dog();"? Why or why not?"</code></pre>
+A. What will be printed when the loop executes?
+B. How does Java determine which <code class="language-java">makeSound()</code> method to call for each animal?
+C. What is this type of polymorphism called?"
+D. Could you assign: <code class="language-java">Animal myPet = new Dog();</code>? Why or why not?</pre>
                             </div>
 
                             <div class="col-12 toggle-solutions" id="p_1213p3-java-solution-col">
@@ -1749,10 +1748,10 @@ D: "Could you assign:" Animal myPet = new Dog();"? Why or why not?"</code></pre>
                                 <div class="collapse" id="p_1213p3-java-solution">
                                     <div class="card card-body">
                                         <samp>
-                                            <pre><code class="language-java">A: 'Woof!' "then" 'Meow!' "then Some generic animal sound"
-B: "Java determines the actual object type at runtime and calls the appropriate overridden method"
-C: "Runtime polymorphism (or method overriding)"
-D: "Yes, because Dog IS-A Animal (inheritance relationship allows this assignment)"</code></pre>
+                                            <pre>A. <code class="language-java">"Woof!"</code> then <code class="language-java">"Meow!"</code> then <code class="language-java">"Some generic animal sound"</code>
+B. Java determines the actual object type at runtime and calls the appropriate overridden method
+C. Runtime polymorphism (or method overriding)
+D. Yes, because <code class="language-java">Dog</code> IS-A <code class="language-java">Animal</code> (inheritance relationship allows this assignment)</pre>
                                         </samp>
                                     </div>
                                 </div>
@@ -1862,12 +1861,12 @@ public Circle(double radius) {
     public String getColor() {
         return color;
     }
-}
+}</code>
 
-A: "What must any class that implements" Drawable "provide?"
-B: "Why can" Circle "implement both Drawable and" Colorable "interfaces?"
-C: "What would happen if" Circle "didn't implement the" getArea() "method?"
-D: "Can you create: Drawable shape = new Circle(5.0); ?"</code></pre>
+A. What must any class that implements <code class="language-java">Drawable</code> provide?
+B. Why can <code class="language-java">Circle</code> implement both <code class="language-java">Drawable</code> and <code class="language-java">Colorable</code> interfaces?
+C. What would happen if <code class="language-java">Circle</code> didn't implement the <code class="language-java">getArea()</code> method?
+D. Can you create: <code class="language-java">Drawable shape = new Circle(5.0);</code>?</pre>
                             </div>
 
                             <div class="col-12 toggle-solutions" id="p_1213p4-java-solution-col">
@@ -1879,13 +1878,10 @@ D: "Can you create: Drawable shape = new Circle(5.0); ?"</code></pre>
                                 <div class="collapse" id="p_1213p4-java-solution">
                                     <div class="card card-body">
                                         <samp>
-                                            <pre>
-                                                <code class="language-java">A: "Implementations for both" draw() "and" getArea() "methods"
-B: "Java allows multiple interface implementation, unlike single inheritance with classes"
-C: "Compilation error -" Circle "must implement all methods from interfaces it implements"
-D: "Yes, because Circle implements Drawable interface (polymorphic assignment)"
-                                                </code>
-                                            </pre>
+                                            <pre>A. Implementations for both <code class="language-java">draw</code>() and <code class="language-java">getArea()</code> methods
+B. Java allows multiple interface implementation, unlike single inheritance with classes
+C. Compilation error - <code class="language-java">Circle</code> must implement all methods from interfaces it implements
+D. Yes, because <code class="language-java">Circle</code> implements <code class="language-java">Drawable</code> interface (polymorphic assignment)</pre>
                                         </samp>
                                     </div>
                                 </div>
@@ -1986,12 +1982,12 @@ public class Rectangle extends Shape {
     public double getArea() {
         return width * height;
     }
-}
+}</code>
 
-A: "Can you create an object like:" Shape s = new Shape("test");" ?"
-B: "What must the" Rectangle "class provide since it" extends Shape"?"
-C: "Does" Rectangle "inherit the" printInfo() "method?"
-D: "What's the main difference between an abstract class and an interface?"</code></pre>
+A. Can you create an object like: <code class="language-java">Shape s = new Shape("test");</code>?
+B. What must the <code class="language-java">Rectangle</code> class provide since it <code class="language-java">extends Shape</code>?
+C. Does <code class="language-java">Rectangle</code> inherit the <code class="language-java">printInfo()</code> method?
+D. What's the main difference between an abstract class and an interface?</pre>
                             </div>
 
                             <div class="col-12 toggle-solutions" id="p_1213p5-java-solution-col">
@@ -2003,12 +1999,10 @@ D: "What's the main difference between an abstract class and an interface?"</cod
                                 <div class="collapse" id="p_1213p5-java-solution">
                                     <div class="card card-body">
                                         <samp>
-                                            <pre>
-                                                <code class="language-java">A: "No, compilation error - cannot instantiate abstract classes"
-B: "An implementation of the abstract" getArea() "method"
-C: "Yes, concrete methods in abstract classes are inherited normally"
-D: "Abstract classes can have constructors, instance variables, and concrete methods; interfaces (before Java 8) could only have abstract methods"
-                                                </code>
+                                            <pre>A. No, compilation error - cannot instantiate abstract classes
+B. An implementation of the abstract <code class="language-java">getArea()</code> method
+C. Yes, concrete methods in abstract classes are inherited normally
+D. Abstract classes can have constructors, instance variables, and concrete methods; interfaces (before Java 8) could only have abstract methods
                                             </pre>
                                         </samp>
                                     </div>
@@ -2100,12 +2094,12 @@ D: "Abstract classes can have constructors, instance variables, and concrete met
 
     public class Course {
         private String courseName;
-        private List<Student> enrolledStudents;
+        private List&lt;Student&gt; enrolledStudents;
     }
 
     public Course(String courseName) {
         this.courseName = courseName;
-        this.enrolledStudents = new ArrayList<>();
+        this.enrolledStudents = new ArrayList&lt;&gt;();
     }
 
     public void enrollStudent(Student student) {
@@ -2120,11 +2114,12 @@ D: "Abstract classes can have constructors, instance variables, and concrete met
         return enrolledStudents.size();
     }
 }
+</code>
 
-A: "What type of relationship exists between" Course "and" Student"?"
-B: "If a Course object is destroyed, what happens to the Student objects?"
-C: "Can a Student be enrolled in multiple courses?"
-D: "What does the" enrollStudent() "method demonstrate about aggregation?"</code></pre>
+A. What type of relationship exists between <code class="language-java">Course</code> and <code class="language-java">Student</code>?
+B. If a <code class="language-java">Course</code> object is destroyed, what happens to the <code class="language-java">Student</code> objects?
+C. Can a <code class="language-java">Student</code> be enrolled in multiple courses?
+D. What does the <code class="language-java">enrollStudent()</code> method demonstrate about aggregation?</pre>
                             </div>
 
                             <div class="col-12 toggle-solutions" id="p_1213p6-java-solution-col">
@@ -2136,13 +2131,10 @@ D: "What does the" enrollStudent() "method demonstrate about aggregation?"</code
                                 <div class="collapse" id="p_1213p6-java-solution">
                                     <div class="card card-body">
                                         <samp>
-                                            <pre>
-                                                <code class="language-java">A: "Aggregation (has-a relationship) - a Course has Students"
-B: "Nothing - Student objects continue to exist independently"
-C: "Yes, the same" Student "object can be referenced by multiple Course objects"
-D: "It shows that objects can be added to aggregations dynamically, and they maintain their independent existence"
-                                                </code>
-                                            </pre>
+                                            <pre>A. Aggregation (has-a relationship) - a <code class="language-java">Course</code> has <code class="language-java">Students</code>
+B. Nothing - <code class="language-java">Student</code> objects continue to exist independently
+C. Yes, the same <code class="language-java">Student</code> object can be referenced by multiple <code class="language-java">Course</code> objects
+D. It shows that objects can be added to aggregations dynamically, and they maintain their independent existence</pre>
                                         </samp>
                                     </div>
                                 </div>
@@ -2216,11 +2208,11 @@ D: "It shows that objects can be added to aggregations dynamically, and they mai
                             <div class="col-12" id="p_1213p7-java-problem-col">
                                 <pre><code class="language-java">public class Author {
     private String name;
-    private List<Book> booksWritten
+    private List<&lt;Book&gt; booksWritten
 
     public Author(String name) {
         this.name = name;
-        this.booksWritten = new ArrayList<>();
+        this.booksWritten = new ArrayList&lt;&gt;();
     }
 
     public void addBook(Book book) {
@@ -2257,12 +2249,12 @@ public class Book {
 // Usage:
     Author author = new Author("J.K. Rowling");
     Book book = new Book("Harry Potter");
-    author.addBook(book);
+    author.addBook(book);</code>
 
-A: "What type of association exists between" Author "and" Book?"
-B: "How many authors can a book have in this design?"
-C: "What happens when" author.addBook(book) "is called?"
-D: "Is this association unidirectional or bidirectional?""</code></pre>
+A. What type of association exists between <code class="language-java">Author</code> and <code class="language-java">Book</code>?
+B. How many authors can a book have in this design?
+C. What happens when <code class="language-java">author.addBook(book)</code> is called?
+D. Is this association unidirectional or bidirectional?</pre>
                             </div>
 
                             <div class="col-12 toggle-solutions" id="p_1213p7-java-solution-col">
@@ -2274,13 +2266,10 @@ D: "Is this association unidirectional or bidirectional?""</code></pre>
                                 <div class="collapse" id="p_1213p7-java-solution">
                                     <div class="card card-body">
                                         <samp>
-                                            <pre>
-                                                <code class="language-java">A: "Author knows about Books, and Book knows about its Author (Bidirectional)"
-B: "One - each Book has a single Author reference"
-C: "The book is added to the author's list AND the book's author reference is set to this author"
-D: "Bidirectional - both classes maintain references to each other"
-                                                </code>
-                                            </pre>
+                                            <pre>A. <code class="language-java">Author</code> knows about <code class="language-java">Book</code>s, and <code class="language-java">Book</code> knows about its <code class="language-java">Author</code> (Bidirectional)
+B. One - each <code class="language-java">Book</code> has a single <code class="language-java">Author</code> reference
+C. The book is added to the author's list AND the book's author reference is set to this author
+D. Bidirectional - both classes maintain references to each other</pre>
                                         </samp>
                                     </div>
                                 </div>
@@ -2361,7 +2350,7 @@ D: "Bidirectional - both classes maintain references to each other"
 
     public void transferMoney(BankAccount from, BankAccount to, double amount) throws InsufficientFundsException {
         try {
-            if (from.getBalance() < amount) {
+            if (from.getBalance() &lt; amount) {
                 throw new InsufficientFundsException(
                     "Insufficient funds. Available: " + from.getBalance());
             }
@@ -2387,13 +2376,12 @@ D: "Bidirectional - both classes maintain references to each other"
             System.err.println("Transfer failed: " + e.getMessage());
         }
     }
-}
+}</code>
 
-A: "What type of exception is" InsufficientFundsException "and why does the transferMoney method need" throws "in its signature?"
-B: "What will be printed when the main method tries to transfer $150 from an account with $100?"
-C: "When does the" finally "block execute?"
-D: "What's the difference between throwing an" InsufficientFundsException "and an" IllegalArgumentException "in this code?"
-                                </code></pre>
+A. What type of exception is <code class="language-java">InsufficientFundsException</code> and why does the <code class="language-java">transferMoney</code> method need <code class="language-java">throws</code> in its signature?
+B. What will be printed when the main method tries to transfer $150 from an account with $100?
+C. When does the <code class="language-java">finally</code> block execute?
+D. What's the difference between throwing an <code class="language-java">InsufficientFundsException</code> and an <code class="language-java">IllegalArgumentException</code> in this code?</pre>
                             </div>
 
                             <div class="col-12 toggle-solutions" id="p_1213p8-java-solution-col">
@@ -2405,11 +2393,10 @@ D: "What's the difference between throwing an" InsufficientFundsException "and a
                                 <div class="collapse" id="p_1213p8-java-solution">
                                     <div class="card card-body">
                                         <samp>
-                                            <pre><code class="language-java">A: "It's a checked exception (extends Exception) - checked exceptions must be declared in method signatures with 'throws' or handled with try-catch"
-B: ""Transfer operation completed" (from finally) then "Transfer failed: Insufficient funds. Available: 100.0" (from catch in main)"
-C: "Always - whether the try block succeeds, an exception is thrown, or an exception is caught"
-D: InsufficientFundsException "is custom/checked and must be declared;"" IllegalArgumentException "is unchecked (runtime) and doesn't need to be declared"
-                                                </code></pre>
+                                            <pre>A. It's a checked exception (<code class="language-java">extends Exception</code>) - checked exceptions must be declared in method signatures with <code class="language-java">throws</code> or handled with <code class="language-java">try-catch</code>
+B. "Transfer operation completed" (from <code class="language-java">finally</code>) then <code class="language-java">"Transfer failed: Insufficient funds. Available: 100.0"</code> (from <code class="language-java">catch</code> in <code class="language-java">main</code>)"
+C. Always - whether the try block succeeds, an exception is thrown, or an exception is caught
+D. <code class="language-java">InsufficientFundsException</code> is custom/checked and must be declared; <code class="language-java">IllegalArgumentException</code> is unchecked (runtime) and doesn't need to be declared</pre>
                                         </samp>
                                     </div>
                                 </div>
@@ -2494,7 +2481,7 @@ D: InsufficientFundsException "is custom/checked and must be declared;"" Illegal
     }
 
     public T getItem(int index) {
-        if (index >= 0 && index < items.size()) {
+        if (index >= 0 && index &lt; items.size()) {
             return items.get(index);
         }
         return null;
@@ -2526,12 +2513,12 @@ D: InsufficientFundsException "is custom/checked and must be declared;"" Illegal
     String result = stringContainer.getItem(0);
 
     DataContainer&#60;Integer&#62; intContainer = new DataContainer&#60;&#62;();
-    intContainer.addItem(42);
+    intContainer.addItem(42);</code>
 
-A: "What does the" &#60;T&#62; "in the class declaration mean and what advantage does it provide?"
-B: "Why doesn't" stringContainer.getItem(0) "require casting to String?"
-C: "What does" &#60;U extends Comparable&#60;U&#62;&#62; "mean in the findMax method signature?"
-D: "What would happen if you tried:" stringContainer.addItem(123)"?"</code></pre>
+A. What does the <code class="language-java">&#60;T&#62;</code> in the class declaration mean and what advantage does it provide?
+B. Why doesn't <code class="language-java">stringContainer.getItem(0)</code> require casting to String?
+C. What does <code class="language-java">&#60;U extends Comparable&#60;U&#62;&#62;</code> mean in the findMax method signature?
+D. What would happen if you tried: <code class="language-java">stringContainer.addItem(123)</code>?</pre>
                             </div>
 
                             <div class="col-12 toggle-solutions" id="p_1213p9-java-solution-col">
@@ -2543,11 +2530,10 @@ D: "What would happen if you tried:" stringContainer.addItem(123)"?"</code></pre
                                 <div class="collapse" id="p_1213p9-java-solution">
                                     <div class="card card-body">
                                         <samp>
-                                            <pre><code class="language-java">A: T "is a type parameter that acts as a placeholder for any type; it provides compile-time type safety and eliminates the need for casting"
-B: "Because generics preserve type information - the compiler knows stringContainer holds String objects, so getItem(0) returns a String"
-C: "U is a bounded type parameter that must implement" Comparable&#60;U&#62; "interface, ensuring objects can be compared with" compareTo()
-D: "Compilation error - 123 is an Integer, but stringContainer only accepts String objects"
-                                                </code></pre>
+                                            <pre>A. <code class="language-java">T</code> is a type parameter that acts as a placeholder for any type; it provides compile-time type safety and eliminates the need for casting
+B. Because generics preserve type information - the compiler knows stringContainer holds String objects, so <code class="language-java">getItem(0)</code> returns a <code class="language-java">String</code>
+C. <code class="language-java">U</code> is a bounded type parameter that must implement <code class="language-java">Comparable&#60;U&#62;</code> interface, ensuring objects can be compared with <code class="language-java">compareTo()</code>
+D. Compilation error - <code class="language-java">123</code> is an <code class="language-java">Integer</code>, but <code class="language-java">stringContainer</code> only accepts <code class="language-java">String</code> objects"</pre>
                                         </samp>
                                     </div>
                                 </div>
