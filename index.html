@@ -2515,8 +2515,8 @@ D. <code class="language-java">InsufficientFundsException</code> is custom/check
     intContainer.addItem(42);</code>
 
 A. What does the <code class="language-java">&#60;T&#62;</code> in the class declaration mean and what advantage does it provide?
-B. Why doesn't <code class="language-java">stringContainer.getItem(0)</code> require casting to String?
-C. What does <code class="language-java">&#60;U extends Comparable&#60;U&#62;&#62;</code> mean in the findMax method signature?
+B. What does <code class="language-java">&#60;T extends Comparable&#62;</code> mean in the <code class="language-java">DataContainer</code> class declaration?
+C. Why doesn't <code class="language-java">stringContainer.getItem(0)</code> require casting to String?
 D. What would happen if you tried: <code class="language-java">stringContainer.addItem(123)</code>?</pre>
                             </div>
 
@@ -2530,8 +2530,8 @@ D. What would happen if you tried: <code class="language-java">stringContainer.a
                                     <div class="card card-body">
                                         <samp>
                                             <pre>A. <code class="language-java">T</code> is a type parameter that acts as a placeholder for any type; it provides compile-time type safety and eliminates the need for casting
-B. Because generics preserve type information - the compiler knows stringContainer holds String objects, so <code class="language-java">getItem(0)</code> returns a <code class="language-java">String</code>
-C. <code class="language-java">U</code> is a bounded type parameter that must implement <code class="language-java">Comparable&#60;U&#62;</code> interface, ensuring objects can be compared with <code class="language-java">compareTo()</code>
+B. <code class="language-java">U</code> is a bounded type parameter that must implement <code class="language-java">Comparable</code> interface, ensuring objects can be compared with <code class="language-java">compareTo()</code>
+C. Because generics preserve type information - the compiler knows stringContainer holds String objects, so <code class="language-java">getItem(0)</code> returns a <code class="language-java">String</code>
 D. Compilation error - <code class="language-java">123</code> is an <code class="language-java">Integer</code>, but <code class="language-java">stringContainer</code> only accepts <code class="language-java">String</code> objects"</pre>
                                         </samp>
                                     </div>
