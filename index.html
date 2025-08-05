@@ -589,8 +589,7 @@ C. <code class="language-python">TOTAL = COST + (COST * TIP_PERCENT) + (COST * T
             <div class="mb-3 question" id="p_1212p3" style="display:none">
                 <label for="p_1212p3">If you're already familiar with data types in programming, the next step is
                     understanding how to work with data once it's stored. This is where functions and methods come in,
-                    they allow us to perform actions using that data. For this exercise, assume you're given two
-                    variables: NAME and AGE. What happens when this function call is executed for cases A and B?
+                    they allow us to perform actions using that data. For this exercise what happens when this function call is executed for cases A and B?
 
                 </label><br />
 
@@ -1592,11 +1591,11 @@ D. It hides the internal balance field and controls access through specific meth
     public void start() {
         System.out.println("Vehicle starting...");
     }
+}
 
-    public class Car extends Vehicle {
-        private int doors;
-    }
-
+public class Car extends Vehicle {
+    private int doors;
+    
     public Car(String brand, int year, int doors) {
         super(brand, year);
         this.doors = doors;
