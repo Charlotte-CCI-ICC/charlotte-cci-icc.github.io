@@ -2467,11 +2467,11 @@ D. <code class="language-java">InsufficientFundsException</code> is custom/check
                     <div class="tab-pane active" id="p_1213p9-java" role="tabpanel" aria-labelledby="p_1213p9-java-tab">
                         <div class="row">
                             <div class="col-12" id="p_1213p9-java-problem-col">
-                                <pre><code class="language-java">public class DataContainer&#60;T extends Comparable&#62; {
+                                <pre><code class="language-java">public class DataContainer &#60;T extends Comparable&#62; {
     private List&#60;T&#62; items;
 
     public DataContainer() {
-        this.items = new ArrayList&#60;T>&#62;();
+        this.items = new ArrayList&#60;T&#62;();
             }
 
     public void addItem(T item) {
@@ -2492,7 +2492,7 @@ D. <code class="language-java">InsufficientFundsException</code> is custom/check
         T max = items.get(0);
 
         for (T item : items) {
-            if (item.compareTo(max) > 0) {
+            if (item.compareTo(max) &gt; 0) {
                 max = item;
             }
         }
